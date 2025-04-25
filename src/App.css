@@ -1,42 +1,65 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.butt{
+  background-color: rgb(32, 32, 32);
+  color : white ;
+  font-size: 1.2rem;
+  border: 2px rgba(255, 255, 255, 0.482) solid;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.butt:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bg{
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(84, 84, 84);
 }
 
-.card {
-  padding: 2em;
+
+.tile {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 62px;  /* Larger tiles */
+  width: 62px;
+  border: 2px solid black; /* Lighter border color */
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.read-the-docs {
-  color: #888;
+.line{
+  display: flex;
+  gap: 4px;
+}
+
+.block{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adds some breathing room */
+}
+
+.correct{
+  background-color: greenyellow;
+}
+
+.wrong{
+  background-color: gray;
+}
+
+.close{
+  background-color: yellow;
 }
